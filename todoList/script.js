@@ -19,7 +19,7 @@ function onAddItemSubmit(e) {
 
   // Validate Input
   if (newItem === "") {
-    alert("Please add an item")
+    alert("Please add a task")
     return
   }
 
@@ -33,7 +33,7 @@ function onAddItemSubmit(e) {
     isEditMode = false
   } else {
     if (checkIfItemExists(newItem)) {
-      alert("That item already exists!")
+      alert("That task already exists!")
       return
     }
   }
